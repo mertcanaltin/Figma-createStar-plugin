@@ -1,0 +1,15 @@
+<h2>Yıldız oluşturucu</h2>
+<p>Adet: <input id="count" value="5" /></p>
+<button id="create">Oluştur</button>
+<button id="cancel">Çıkış</button>
+<script>
+  document.getElementById("create").onclick = () => {
+    const textbox = document.getElementById("count");
+    const count = parseInt(textbox.value, 10);
+    parent.postMessage({ pluginMessage: { type: "create-star", count } }, "*");
+  };
+
+  document.getElementById("cancel").onclick = () => {
+    parent.postMessage({ pluginMessage: { type: "cancel" } }, "*");
+  };
+</script>
