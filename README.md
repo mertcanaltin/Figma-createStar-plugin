@@ -1,3 +1,4 @@
+![](star.gif)
 This plugin template uses Typescript. If you are familiar with Javascript, Typescript will
 look very familiar. In fact, valid Javascript code is already valid Typescript code.
 
